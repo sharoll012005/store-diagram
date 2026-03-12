@@ -5,8 +5,8 @@ def generate_summary(sales):
         summary.setdefault(v["product"], 0)
         summary[v["product"]] += v["units"]
         general += v["total"]
-    print("\nRESUMEN DE VENTAS DEL DÍA\n")
+    print("\nDAILY SALES SUMMARY\n")
     for prod, cant in summary.items():
-        print(f"Producto: {prod}\nCantidad total vendida: {cant}\n")
-    print(f"Total recaudado: ${general:,.3f}")
+        print(f"Product: {prod}\ntotal quantity sold: {cant}\n")
+    print(f"TOTAL RAISED: ${general:,.3f}")
     
