@@ -1,9 +1,9 @@
-from registro import register_sales
-from resumen import trigger_summary_summary
+from record import record_sales
+from summary import generate_summary
 
 def main():
-    sales = register_sales()
-    trigger_summary(sales)
+    sales = record_sales()
+    generate_summary(sales)
 
 if _name_ == "_main_":
     main()
