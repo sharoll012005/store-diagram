@@ -1,6 +1,6 @@
 def record_sales():
     sales = []
-    amount = int(input("¿Cuántas ventas vas a hacer? "))
+    amount = int(input("¿How many sales are you going to make? "))
     for _ in range(amount):
         product = input("Product: ")
         price = float(input("unit price: "))
