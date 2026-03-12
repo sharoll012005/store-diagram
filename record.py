@@ -25,7 +25,7 @@ def record_sales():
         count += 1
 
     another = input("¿Registrar otra venta? (s/n): ").lower()
-    while another == "s":
+    while another in ("s", "si"):
         product = input("Producto: ").strip()
         while product == "":
             product = input("Producto (no vacío): ").strip()
