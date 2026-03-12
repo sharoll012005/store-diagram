@@ -3,17 +3,17 @@ def record_sales():
     amount = int(input("¿How many sales are you going to make? "))
     count = 0
     while count < amount:
-        product = input("Producto: ").strip()
+        product = input("Product: ").strip()
         while product == "":
-            product = input("Producto (no vacío): ").strip()
+            product = input("Product (not empty): ").strip()
 
-        unit_price = float(input("Precio unitario: "))
+        unit_price = float(input("unit price: "))
         while unit_price <= 0:
-            unit_price = float(input("Precio unitario (>0): "))
+            unit_price = float(input("unit price (>0): "))
 
-        units = int(input("Unidades: "))
+        units = int(input("Unit: "))
         while units <= 0:
-            units = int(input("Unidades (>0): "))
+            units = int(input("Unit (>0): "))
 
         total = unit_price * units
         sales.append({
@@ -24,19 +24,19 @@ def record_sales():
         })
         count += 1
 
-    another = input("¿Registrar otra venta? (s/n): ").lower()
+    another = input("¿Register another sale? (s/n): ").lower()
     while another in ("s", "si"):
-        product = input("Producto: ").strip()
+        product = input("Product: ").strip()
         while product == "":
-            product = input("Producto (no vacío): ").strip()
+            product = input("Product (not empty): ").strip()
 
-        unit_price = float(input("Precio unitario: "))
+        unit_price = float(input("unit price: "))
         while unit_price <= 0:
-            unit_price = float(input("Precio unitario (>0): "))
+            unit_price = float(input("unit price (>0): "))
 
-        units = int(input("Unidades: "))
+        units = int(input("Unit: "))
         while units <= 0:
-            units = int(input("Unidades (>0): "))
+            units = int(input("Unit (>0): "))
 
         total = unit_price * units
         sales.append({
@@ -45,7 +45,7 @@ def record_sales():
             "unit_price": unit_price,
             "total": total
         })
-        another = input("¿Registrar otra venta? (s/n): ").lower()
+        another = input("¿Register another sale? (s/n): ").lower()
 
-    print("Saldrán guardando ventas")
+    print("save sales information")
     return sales
