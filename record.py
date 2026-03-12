@@ -1,5 +1,5 @@
 def record_sales():
-sales = []
+    sales = []
     amount = int(input("¿How many sales are you going to make? "))
     count = 0
     while count < amount:
