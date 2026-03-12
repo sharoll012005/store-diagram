@@ -5,5 +5,5 @@ def main():
     sales = record_sales()
     generate_summary(sales)
 
-if _name_ == "_main_":
+if __name__=="__main__":
     main()
